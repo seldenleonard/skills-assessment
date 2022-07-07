@@ -2,6 +2,8 @@
 
 words = ["hi", "hello", "howdy"]
 
-words << "bonjour"
-p words << "hey"
+# words << "bonjour"
+# words << "hey"
 
+# REFACTORED
+p words.push("heyo", "greetings")
