@@ -3,3 +3,8 @@
 books = [{:Title => "Fahrenheit 451", :Author => "Ray Bradbury"}, {:Title => "1984", :Author => "George Orwell"}, {:Title => "The Handmaid's Tale", :Author => "Margaret Atwood"}]
 
 puts books[2][:Author]
+
+# ALTERNATE SOLUTION - JUST USING DIFFERENT SYNTAX
+books = [{"Title" => "Fahrenheit 451", "Author" => "Ray Bradbury"}, {"Title "=> "1984", "Author" => "George Orwell"}, {"Title "=> "The Handmaid's Tale", "Author" => "Margaret Atwood"}]
+
+puts books[2]["Author"]
