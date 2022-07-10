@@ -7,3 +7,11 @@ numbers_under_20 = []
 p numbers_under_20 = numbers.select{ |number|
   number < 30
 }
+
+# ALTERNATE SOLUTION - USING OPPOSITE METHOD
+numbers = [2, 32, 80, 18, 12, 3]
+numbers_under_20 = []
+
+p numbers_under_20 = numbers.reject{ |number|
+  number >= 30
+}
