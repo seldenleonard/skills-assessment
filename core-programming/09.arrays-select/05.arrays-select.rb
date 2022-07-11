@@ -5,3 +5,9 @@ strings_array = ["a", "man", "a", "plan", "a", "canal", "panama"]
 p short_strings_array = strings_array.select{ |string|
   string.length < 4
 }
+
+# ALTERNATE SOLUTION
+strings_array = ["a", "man", "a", "plan", "a", "canal", "panama"]
+p short_strings_array = strings_array.reject{ |string|
+  string.length >= 4
+}
