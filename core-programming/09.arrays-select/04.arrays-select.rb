@@ -11,3 +11,9 @@ numbers_array = [2, 4, 5, 1, 8, 9, 7]
 p even_numbers_array = numbers_array.reject{ |number|
   number.odd?
 }
+
+# ALTERNATE SOLUTION #2
+numbers_array = [2, 4, 5, 1, 8, 9, 7]
+p even_numbers_array = numbers_array.reject{ |number|
+  number % 2 != 0
+}
