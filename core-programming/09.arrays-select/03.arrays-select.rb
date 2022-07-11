@@ -6,3 +6,10 @@ products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "boo
 p expensive_products = products.select{ |product|
   product[:price] > 5
 }
+
+# ALTERNATE SOLUTION
+products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+
+p expensive_products = products.reject{ |product|
+  product[:price] <= 5
+}
