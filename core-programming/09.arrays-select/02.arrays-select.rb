@@ -5,3 +5,9 @@ strings_array = ["winner", "winner", "chicken", "dinner"]
 p w_strings_array = strings_array.select{ |string|
   string[0] == "w"
 }
+
+# ALTERNATE SOLUTION
+strings_array = ["winner", "winner", "chicken", "dinner"]
+p w_strings_array = strings_array.reject{ |string|
+  string[0] != "w"
+}
